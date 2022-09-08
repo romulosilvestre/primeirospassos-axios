@@ -1,4 +1,4 @@
-const url = "http://localhost:5500/api"
+const url = "https://localhost:7142/api/aeronaves"
 
 function getUsers() {
   axios.get(url)
@@ -9,7 +9,7 @@ function getUsers() {
     })
     .catch(error => console.log(error))
 }
-
+/*
 function getUser() {
   axios.get(`${url}/1`)
     .then(response => {
@@ -50,10 +50,10 @@ function deleteUser(id) {
     })
     .catch(error => console.error(error));
 }
-
+*/
 //calls
 getUsers()
-getUser()
+//getUser()
 // addNewUser({
 //   name: "Olivia Zars",
 //   avatar: "http://lorempixel.com/400/200",
